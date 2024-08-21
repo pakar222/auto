@@ -131,6 +131,7 @@ Berikan kesimpulan yang kuat.
 Ajak pembaca untuk mengambil tindakan (misal, berlangganan, bagikan).
 FAQ:
 Jawab pertanyaan umum terkait topik artikel.
+Pastikan artikel ini relevan, informatif, dan sesuai dengan standar SEO untuk memaksimalkan visibilitas di mesin pencari.
                 """
 
                 # Generate content
