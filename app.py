@@ -108,10 +108,29 @@ if st.session_state.api_key_valid:
                 # Generate article prompt
                 keywords = ', '.join(st.session_state.keywords)
                 prompt = f"""
-                Anda adalah seorang spesialis SEO dengan pengalaman dalam membuat artikel SEO berkualitas. 
-                Topik artikel ini adalah "{topik_artikel}". Kata kunci SEO yang harus digunakan dalam artikel ini adalah "{keywords}". 
-                Tulis artikel blog dengan gaya penulisan {gaya_bahasa}. Artikel harus memiliki jumlah kata {num_len}. 
-                Pastikan artikel ini relevan, informatif, dan sesuai dengan standar SEO untuk memaksimalkan visibilitas di mesin pencari.
+                Anda adalah seorang spesialis SEO dengan pengalaman dalam membuat artikel SEO berkualitas.
+Tugas Anda:
+Buatlah sebuah artikel blog yang informatif dan menarik tentang topik "{topik_artikel}". Pastikan artikel ini memenuhi kriteria berikut:
+Gaya bahasa: {gaya_bahasa}
+Panjang: Sekitar {num_len} kata
+Kata kunci: Optimalkan penggunaan kata kunci {keywords}
+Struktur:
+Pendahuluan:
+Jelaskan secara singkat topik artikel.
+Tarik minat pembaca dengan fakta menarik atau pertanyaan.
+Sampaikan tujuan artikel.
+Daftar Isi:
+Buat daftar poin-poin utama yang akan dibahas.
+Isi:
+Subtopik 1: Jelaskan secara detail, gunakan kata kunci secara natural.
+Subtopik 2: Jelaskan secara detail, gunakan kata kunci secara natural.
+... (Tambahkan subtopik lain sesuai kebutuhan)
+Kesimpulan:
+Rangkum poin-poin penting.
+Berikan kesimpulan yang kuat.
+Ajak pembaca untuk mengambil tindakan (misal, berlangganan, bagikan).
+FAQ:
+Jawab pertanyaan umum terkait topik artikel.
                 """
 
                 # Generate content
